@@ -1,6 +1,7 @@
 IDA插件，用于vxworks5、6符号表恢复<br>
 由于python3.6以上版本的一些语法规则的改变（比如，str和bytes的拼接变得不再是那么“弱类型”等一些问题），且项目多年没有维护，<br>
-故Vxhunter基于python3的IDA插件用不了，于是修复了下插件的bug放这了<br>
+![b8509bee55f68a9ae6eeafaebbca327a](https://github.com/user-attachments/assets/0a74e103-ba66-47e7-a2ef-0088745102c4)
+<br>故Vxhunter基于python3的IDA插件用不了，执行起来会有诸如" TypeError: a bytes-like object is required,not 'str' "之类的报错，所以把修复bug后的插件放这了<br>
 常见情况的用法：<br>
 1.直接将这两个.py脚本放入ida plugin文件夹下<br>
 2.binwalk -Me后，使用grep -r bzero，或者别的函数，找到已经分离的vxworks固件的符号表文件<br>
